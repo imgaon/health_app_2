@@ -12,7 +12,7 @@ class ApiService {
     return await _sendRequest(() => client.get(url, headers: headers));
   }
 
-  Future<ResponseModel> post(Uri url, Map<String, String> headers, String body) async {
+  Future<ResponseModel> post(Uri url, Map<String, String> headers, String? body) async {
     return await _sendRequest(() => client.post(url, headers: headers, body: body));
   }
 
